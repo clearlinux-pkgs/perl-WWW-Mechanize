@@ -1,0 +1,18 @@
+# This file contains additional runtime requirements that did not get
+# picked up automatically. One name per line, no whitespace.
+perl(HTML::Form)
+perl(HTML::HeadParser)
+perl(HTML::TokeParser)
+perl(HTML::TreeBuilder)
+perl(HTTP::Cookies)
+perl(HTTP::Daemon)
+perl(HTTP::Request)
+perl(HTTP::Request::Common)
+perl(HTTP::Response)
+perl(LWP)
+perl(LWP::Simple)
+perl(LWP::UserAgent)
+perl(URI)
+perl(URI::Escape)
+perl(URI::URL)
+perl(URI::file)
