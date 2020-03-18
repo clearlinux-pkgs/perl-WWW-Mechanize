@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 1.96
-Release  : 3
+Release  : 4
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.96.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.96.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
@@ -172,9 +172,9 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize.pm
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize/Cookbook.pod
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize/Examples.pod
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize/FAQ.pod
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize/Image.pm
-/usr/lib/perl5/vendor_perl/5.30.1/WWW/Mechanize/Link.pm
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize.pm
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Cookbook.pod
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Examples.pod
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/FAQ.pod
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Image.pm
+/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Link.pm
