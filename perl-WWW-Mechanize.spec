@@ -4,13 +4,14 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 1.97
-Release  : 5
+Release  : 6
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.97.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-1.97.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
 Group    : Development/Tools
-License  : Artistic-1.0-Perl
+License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0
 Requires: perl-WWW-Mechanize-bin = %{version}-%{release}
+Requires: perl-WWW-Mechanize-license = %{version}-%{release}
 Requires: perl-WWW-Mechanize-man = %{version}-%{release}
 Requires: perl-WWW-Mechanize-perl = %{version}-%{release}
 Requires: perl(HTML::Form)
@@ -65,6 +66,7 @@ version 1.97
 %package bin
 Summary: bin components for the perl-WWW-Mechanize package.
 Group: Binaries
+Requires: perl-WWW-Mechanize-license = %{version}-%{release}
 
 %description bin
 bin components for the perl-WWW-Mechanize package.
@@ -79,6 +81,14 @@ Requires: perl-WWW-Mechanize = %{version}-%{release}
 
 %description dev
 dev components for the perl-WWW-Mechanize package.
+
+
+%package license
+Summary: license components for the perl-WWW-Mechanize package.
+Group: Default
+
+%description license
+license components for the perl-WWW-Mechanize package.
 
 
 %package man
@@ -124,6 +134,8 @@ make TEST_VERBOSE=1 test || :
 
 %install
 rm -rf %{buildroot}
+mkdir -p %{buildroot}/usr/share/package-licenses/perl-WWW-Mechanize
+cp %{_builddir}/WWW-Mechanize-1.97/LICENSE %{buildroot}/usr/share/package-licenses/perl-WWW-Mechanize/10492898635756fefba5e986b76a196b25b136ea
 if test -f Makefile.PL; then
 make pure_install PERL_INSTALL_ROOT=%{buildroot} INSTALLDIRS=vendor
 else
@@ -150,15 +162,19 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/share/man/man3/WWW::Mechanize::Image.3
 /usr/share/man/man3/WWW::Mechanize::Link.3
 
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-WWW-Mechanize/10492898635756fefba5e986b76a196b25b136ea
+
 %files man
 %defattr(0644,root,root,0755)
 /usr/share/man/man1/mech-dump.1
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize.pm
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Cookbook.pod
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Examples.pod
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/FAQ.pod
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Image.pm
-/usr/lib/perl5/vendor_perl/5.30.2/WWW/Mechanize/Link.pm
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize.pm
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize/Cookbook.pod
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize/Examples.pod
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize/FAQ.pod
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize/Image.pm
+/usr/lib/perl5/vendor_perl/5.30.3/WWW/Mechanize/Link.pm
