@@ -1,4 +1,4 @@
-1.97
+1.99
 perl(CGI)
 perl(HTML::Form)
 perl(HTML::HeadParser)
@@ -13,6 +13,7 @@ perl(HTTP::Server::Simple::CGI)
 perl(LWP)
 perl(LWP::Simple)
 perl(LWP::UserAgent)
+perl(Path::Tiny)
 perl(Test::Deep)
 perl(Test::Fatal)
 perl(Test::Output)
