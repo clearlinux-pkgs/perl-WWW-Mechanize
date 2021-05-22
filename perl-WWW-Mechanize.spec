@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 2.03
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.03.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.03.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
@@ -43,6 +43,7 @@ BuildRequires : perl(HTTP::Request)
 BuildRequires : perl(HTTP::Request::Common)
 BuildRequires : perl(HTTP::Response)
 BuildRequires : perl(HTTP::Server::Simple::CGI)
+BuildRequires : perl(HTTP::Status)
 BuildRequires : perl(LWP)
 BuildRequires : perl(LWP::Simple)
 BuildRequires : perl(LWP::UserAgent)
