@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 2.03
-Release  : 15
+Release  : 16
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.03.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.03.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
