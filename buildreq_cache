@@ -1,4 +1,4 @@
-2.03
+2.04
 perl(CGI)
 perl(HTML::Form)
 perl(HTML::HeadParser)
@@ -10,7 +10,6 @@ perl(HTTP::Request)
 perl(HTTP::Request::Common)
 perl(HTTP::Response)
 perl(HTTP::Server::Simple::CGI)
-perl(HTTP::Status)
 perl(LWP)
 perl(LWP::Simple)
 perl(LWP::UserAgent)
