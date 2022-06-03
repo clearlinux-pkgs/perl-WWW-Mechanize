@@ -4,7 +4,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 2.06
-Release  : 21
+Release  : 22
 URL      : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.06.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.06.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
@@ -177,9 +177,4 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize.pm
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize/Cookbook.pod
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize/Examples.pod
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize/FAQ.pod
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize/Image.pm
-/usr/lib/perl5/vendor_perl/5.34.0/WWW/Mechanize/Link.pm
+/usr/lib/perl5/*
