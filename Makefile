@@ -1,5 +1,5 @@
 PKG_NAME := perl-WWW-Mechanize
-URL = https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.09.tar.gz
+URL = https://cpan.metacpan.org/authors/id/O/OA/OALDERS/WWW-Mechanize-2.10.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
