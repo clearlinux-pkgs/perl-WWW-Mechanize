@@ -1,4 +1,4 @@
-2.12
+2.13
 perl(HTML::Form)
 perl(HTML::HeadParser)
 perl(HTML::TokeParser)
@@ -7,7 +7,6 @@ perl(HTTP::Cookies)
 perl(HTTP::Daemon)
 perl(HTTP::Request)
 perl(HTTP::Request::Common)
-perl(HTTP::Response)
 perl(LWP)
 perl(LWP::Simple)
 perl(LWP::UserAgent)
