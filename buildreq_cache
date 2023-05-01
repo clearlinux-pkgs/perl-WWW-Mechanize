@@ -1,4 +1,4 @@
-2.16
+2.17
 perl(HTML::Form)
 perl(HTML::HeadParser)
 perl(HTML::TokeParser)
@@ -11,9 +11,7 @@ perl(LWP)
 perl(LWP::Simple)
 perl(LWP::UserAgent)
 perl(Path::Tiny)
-perl(Sub::Uplevel)
 perl(Test::Deep)
-perl(Test::Exception)
 perl(Test::Fatal)
 perl(Test::Memory::Cycle)
 perl(Test::Output)
