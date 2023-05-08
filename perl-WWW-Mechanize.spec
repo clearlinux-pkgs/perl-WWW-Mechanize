@@ -5,7 +5,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 2.17
-Release  : 31
+Release  : 32
 URL      : https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-2.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-2.17.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
