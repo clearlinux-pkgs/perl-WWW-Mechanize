@@ -1,0 +1,37 @@
+From 1006ee13a759ffb9b40947b70a9e1241cf47e896 Mon Sep 17 00:00:00 2001
+From: "Brett T. Warden" <brett.t.warden@intel.com>
+Date: Mon, 8 May 2023 18:53:52 -0700
+Subject: [PATCH] Clear proxy settings so loopback tests work
+
+---
+ t/local/post.t    | 1 +
+ t/local/referer.t | 1 +
+ 2 files changed, 2 insertions(+)
+
+diff --git a/t/local/post.t b/t/local/post.t
+index b00c9d3cdc77..f82d55e8eacd 100644
+--- a/t/local/post.t
++++ b/t/local/post.t
+@@ -7,6 +7,7 @@ use LocalServer ();
+ 
+ BEGIN {
+     delete @ENV{qw( IFS CDPATH ENV BASH_ENV )};
++    delete @ENV{qw( http_proxy HTTP_PROXY )};
+     use_ok('WWW::Mechanize');
+ }
+ 
+diff --git a/t/local/referer.t b/t/local/referer.t
+index 1a08974d30df..f15b83d30d3b 100644
+--- a/t/local/referer.t
++++ b/t/local/referer.t
+@@ -8,6 +8,7 @@ use Test::Memory::Cycle;
+ 
+ BEGIN {
+     delete @ENV{qw( IFS CDPATH ENV BASH_ENV )};
++    delete @ENV{qw( http_proxy HTTP_PROXY )};
+     use_ok('WWW::Mechanize');
+ }
+ 
+-- 
+2.40.1
+

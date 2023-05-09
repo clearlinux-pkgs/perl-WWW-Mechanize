@@ -5,7 +5,7 @@
 #
 Name     : perl-WWW-Mechanize
 Version  : 2.17
-Release  : 33
+Release  : 34
 URL      : https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-2.17.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SI/SIMBABQUE/WWW-Mechanize-2.17.tar.gz
 Summary  : 'Handy web browsing in a Perl object'
@@ -60,6 +60,7 @@ BuildRequires : perl(URI::file)
 # Suppress stripping binaries
 %define __strip /bin/true
 %define debug_package %{nil}
+Patch1: 0001-Clear-proxy-settings-so-loopback-tests-work.patch
 
 %description
 # NAME
@@ -115,6 +116,7 @@ perl components for the perl-WWW-Mechanize package.
 %prep
 %setup -q -n WWW-Mechanize-2.17
 cd %{_builddir}/WWW-Mechanize-2.17
+%patch1 -p1
 
 %build
 export http_proxy=http://127.0.0.1:9/
@@ -122,7 +124,7 @@ export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
 if test -f Makefile.PL; then
-%{__perl} Makefile.PL
+%{__perl} -I. Makefile.PL
 make  %{?_smp_mflags}
 else
 %{__perl} Build.PL
